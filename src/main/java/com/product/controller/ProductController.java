@@ -61,7 +61,7 @@ public class ProductController {
 		return repository.findById(id);
 	}
 
-	@RequestMapping(method = RequestMethod.PUT, path = "/soldProduct/{id}/{NumberOfItem}")
+	@RequestMapping(method = RequestMethod.PUT, path = "/saleProduct/{id}/{NumberOfItem}")
 	public Product update(@PathVariable String id, @PathVariable int NumberOfItem) {
 		Optional<Product> optProduct = repository.findById(id);
 		Product b = optProduct.get();
